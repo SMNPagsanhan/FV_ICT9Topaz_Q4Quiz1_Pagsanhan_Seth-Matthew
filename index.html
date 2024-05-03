@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4thQuiz1</title>
+<style>
+#profile{
+width: 300px;
+height: 300px;
+}
+
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: sans-serif;
+line-height: 1.5;
+min-height: 100vh;
+background: #f3f3f3;
+flex-direction: column;
+margin: 0;
+}
+
+.main {
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+padding: 10px 20px;
+transition: transform 0.2s;
+width: 500px;
+text-align: center;
+}
+
+h1 {
+color: #4CAF50;
+}
+
+label {
+display: block;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 5px;
+text-align: left;
+color: #555;
+font-weight: bold;
+}
+
+
+input {
+display: block;
+width: 100%;
+margin-bottom: 15px;
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+button {
+padding: 20px;
+border-radius: 20px;
+margin-top: 15px;
+margin-bottom: 15px;
+color: black;
+cursor: pointer;
+background-color: #FF0F1F;
+width: 60%;
+font-size: 20px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<center>
+<div id="login-container">
+	<div class="col-md-10">
+		
+		<img id="profile" src="johan icon ( ˇωˇ ).jpeg"><br><br>
+
+	<form action="mainpage.html" class="form-group">
+		<label id="email">Email</label><br>
+		<input type="text" class="form-control bg-light" name="email" id="email">
+		<br>
+		<label id="pass">Password</label><br>
+		<input type="text" class="form-control bg-light" name="pass" id="pass">
+		
+
+		<!--choose a color of a button, then link it to the mainpage-->
+		<a href="mainpage.html"><button class="btn btn-success">Login</button></a>
+		<a href="#"><button type="reset" class="btn btn-light">Cancel</button></a>
+	</form>
+</div>
+</center>
+	<script type="text/javascript">
+		//ids in line 62 and 63 should be the same as ids in the forms above
+		document.getElementById("ID_HERE").innerHTML = "Email:"; //this is the label for email input box
+		//copy line 62 here to create a label for. the password
+	</script>
+</body>
+</html>
